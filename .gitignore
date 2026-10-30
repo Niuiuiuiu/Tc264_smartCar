@@ -1,0 +1,10 @@
+# ADS build output and local workspace data
+/Debug/
+/Release/
+/.ads/
+/.metadata/
+
+# Temporary files
+*.bak
+*.tmp
+*.log

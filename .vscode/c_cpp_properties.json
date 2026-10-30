@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "compilerPath": "",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "G:/AURIX_Development_Studio/AURIX-Studio-1.10.40/tools/Compilers/Tasking_1.1r8/ctc/include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "__TASKING__=1",
+                "__CPU__=tc26xb",
+                "__CHAR_BIT__=8",
+                "__SHORT_BIT__=16",
+                "__INT_BIT__=32",
+                "__LONG_BIT__=32",
+                "__LLONG_BIT__=64"
+            ],
+            "cStandard": "c99"
+        }
+    ],
+    "version": 4
+}
