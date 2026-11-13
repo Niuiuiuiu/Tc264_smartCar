@@ -44,5 +44,7 @@ void drv_motor_get_encoder(motor_info* motor){
     encoder_clear_count(motor->pin_info.encoder_timer);
 }
 
-
+void drv_motor_get_encoder_e(motor_info* motor){  
+    motor->encode = encoder_get_count(motor->pin_info.encoder_timer);
+}
 

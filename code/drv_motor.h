@@ -55,9 +55,15 @@ void drv_motor_set_duty(motor_info* motor,uint32_t duty);
 void drv_motor_set_dir(motor_info* motor,MOTOR_DIR dir);
 
 /**
- * @brief 获取电机编码器值
+ * @brief 获取电机编码器值(每隔dt的脉冲数)
  * @param motor 电机实例指针
  */
 void drv_motor_get_encoder(motor_info* motor);
+
+/**
+ * @brief 获取电机编码器值(不考虑dt)
+ * @param motor 电机实例指针
+ */
+void drv_motor_get_encoder_e(motor_info* motor);
 
 #endif /* _MOTOR_H__ */
