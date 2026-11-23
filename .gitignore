@@ -16,5 +16,5 @@ __pycache__/
 # Local VS Code debug config (machine-specific absolute paths)
 .vscode/launch.json
 
-# Local AI session workspace / generated notes
-/sessions/
+# Local AI session workspace / generated notes (never track)
+sessions/
