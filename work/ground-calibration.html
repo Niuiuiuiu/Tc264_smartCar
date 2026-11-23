@@ -1,0 +1,68 @@
+<div id="ground-calibration-diagram" role="img" aria-label="俯视示意。地面原点 O 在车底中央。前方 15 厘米处左侧 A、右侧 B，前方 40 厘米处左侧 C、右侧 D。四点分别离车身中线 10 厘米。">
+  <div class="ground-forward">↑ +X 车头前方</div>
+  <div class="ground-centerline" aria-hidden="true"></div>
+  <div class="ground-far-line" aria-hidden="true"></div>
+  <div class="ground-near-line" aria-hidden="true"></div>
+  <div class="ground-mark ground-far-left">C<span>(40, +10)</span></div>
+  <div class="ground-mark ground-far-right">D<span>(40, −10)</span></div>
+  <div class="ground-mark ground-near-left">A<span>(15, +10)</span></div>
+  <div class="ground-mark ground-near-right">B<span>(15, −10)</span></div>
+  <div class="ground-left">← +Y 车身左侧</div>
+  <div class="ground-origin">O <span>(0, 0)</span></div>
+  <div class="ground-right">车身右侧 −Y →</div>
+  <div class="ground-note">地面坐标 (X, Y)，单位 cm</div>
+</div>
+<style>
+  #ground-calibration-diagram {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) max-content minmax(0, 1fr);
+    grid-template-rows: auto auto auto auto auto;
+    align-items: center;
+    justify-items: center;
+    gap: calc(var(--font-size-base) * 0.65) 0;
+    max-width: 30rem;
+    margin-inline: auto;
+    color: var(--foreground);
+    text-align: center;
+  }
+  #ground-calibration-diagram .ground-forward { grid-area: 1 / 2; }
+  #ground-calibration-diagram .ground-centerline {
+    grid-area: 2 / 2 / 5 / 3;
+    align-self: stretch;
+    border-inline-start: 1px solid var(--border);
+  }
+  #ground-calibration-diagram .ground-far-line,
+  #ground-calibration-diagram .ground-near-line {
+    justify-self: stretch;
+    margin-inline: 16%;
+    border-block-start: 1px solid var(--border);
+  }
+  #ground-calibration-diagram .ground-far-line { grid-area: 2 / 1 / 3 / 4; }
+  #ground-calibration-diagram .ground-near-line { grid-area: 3 / 1 / 4 / 4; }
+  #ground-calibration-diagram .ground-mark,
+  #ground-calibration-diagram .ground-origin {
+    z-index: 1;
+    padding: 0.2em 0.4em;
+    background: var(--background);
+    font-weight: 500;
+  }
+  #ground-calibration-diagram .ground-mark { color: var(--viz-series-1); }
+  #ground-calibration-diagram .ground-mark span,
+  #ground-calibration-diagram .ground-origin span {
+    display: block;
+    color: var(--foreground);
+    font-weight: 400;
+    white-space: nowrap;
+  }
+  #ground-calibration-diagram .ground-far-left { grid-area: 2 / 1; }
+  #ground-calibration-diagram .ground-far-right { grid-area: 2 / 3; }
+  #ground-calibration-diagram .ground-near-left { grid-area: 3 / 1; }
+  #ground-calibration-diagram .ground-near-right { grid-area: 3 / 3; }
+  #ground-calibration-diagram .ground-left { grid-area: 4 / 1; }
+  #ground-calibration-diagram .ground-origin { grid-area: 4 / 2; }
+  #ground-calibration-diagram .ground-right { grid-area: 4 / 3; }
+  #ground-calibration-diagram .ground-note {
+    grid-area: 5 / 1 / 6 / 4;
+    color: var(--muted-foreground);
+  }
+</style>
