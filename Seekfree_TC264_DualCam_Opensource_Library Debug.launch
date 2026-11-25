@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.rt.hightec.agent.launcher.launchConfigurationType">
+    <stringAttribute key="ACC_HW" value="DAS JDS TriBoard TC3XX V2.0 TB9P8A3B"/>
+    <booleanAttribute key="ENABLE_AGENTLOG" value="false"/>
+    <booleanAttribute key="ENABLE_FLASHING" value="true"/>
+    <booleanAttribute key="ENABLE_STOPPING" value="true"/>
+    <stringAttribute key="EXECUTABLE_PATH" value="${workspace_loc}/Seekfree_TC264_DualCam_Opensource_Library/Debug/Seekfree_TC264_DualCam_Opensource_Library.elf"/>
+    <stringAttribute key="STOP_FUNCTION" value="core0_main"/>
+    <stringAttribute key="SVD" value="G:/AURIX_Development_Studio/AURIX-Studio-1.10.40/build_system/bundled-artefacts-repo/svd/tc26xbpd/1.2-3/device.svd"/>
+    <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="Seekfree_TC264_DualCam_Opensource_Library"/>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+        <listEntry value="/Seekfree_TC264_DualCam_Opensource_Library"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+        <listEntry value="4"/>
+    </listAttribute>
+    <stringAttribute key="org.eclipse.debug.ui.ATTR_LOCATION" value="/Seekfree_TC264_DualCam_Opensource_Library/Seekfree_TC264_DualCam_Opensource_Library Debug.launch"/>
+    <stringAttribute key="org.eclipse.debug.ui.ATTR_PROJECT_NAME" value="Seekfree_TC264_DualCam_Opensource_Library"/>
+    <booleanAttribute key="org.eclipse.debug.ui.ATTR_SHARED" value="true"/>
+    <stringAttribute key="org.eclipse.tcf.debug.MemoryMap" value="[{&quot;FileName&quot;:&quot;H:/MCU/Tc264/workplace/Seekfree_TC264_DualCam_Opensource_Library/Debug/Seekfree_TC264_DualCam_Opensource_Library.elf&quot;,&quot;ID&quot;:&quot;/DAS JDS TriBoard TC3XX V2.0 TB9P8A3B/Core 0: CPU0 TriCore 1.6E&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;66b18f86-776f-462b-abba-9d01333ed2d3&quot;},{&quot;FileName&quot;:&quot;H:/MCU/Tc264/workplace/Seekfree_TC264_DualCam_Opensource_Library/Debug/Seekfree_TC264_DualCam_Opensource_Library.elf&quot;,&quot;ID&quot;:&quot;/DAS JDS TriBoard TC3XX V2.0 TB9P8A3B/Core 0: CPU0 TriCore 1.6E&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;585c283c-e215-463b-8229-a1458e4ce40f&quot;},{&quot;FileName&quot;:&quot;H:/MCU/Tc264/workplace/Seekfree_TC264_DualCam_Opensource_Library/Debug/Seekfree_TC264_DualCam_Opensource_Library.elf&quot;,&quot;ID&quot;:&quot;/DAS JDS TriBoard TC3XX V2.0 TB9P8A3B/Core 0: CPU0 TriCore 1.6E&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;e04097a1-e825-4e26-ab96-6e1000c055c6&quot;},{&quot;FileName&quot;:&quot;H:/MCU/Tc264/workplace/Seekfree_TC264_DualCam_Opensource_Library/Debug/Seekfree_TC264_DualCam_Opensource_Library.elf&quot;,&quot;ID&quot;:&quot;/DAS JDS TriBoard TC3XX V2.0 TB9P8A3B/Core 1: CPU1 TriCore 1.6P&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;76954e66-5a48-4b83-a975-d06a5b37d112&quot;},{&quot;FileName&quot;:&quot;H:/MCU/Tc264/workplace/Seekfree_TC264_DualCam_Opensource_Library/Debug/Seekfree_TC264_DualCam_Opensource_Library.elf&quot;,&quot;ID&quot;:&quot;/DAS JDS TriBoard TC3XX V2.0 TB9P8A3B/Core 0: CPU0 TriCore 1.6E&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;ea4b2385-d4b9-48ef-bfaa-c0a8cadcddf3&quot;},{&quot;FileName&quot;:&quot;H:/MCU/Tc264/workplace/Seekfree_TC264_DualCam_Opensource_Library/Debug/Seekfree_TC264_DualCam_Opensource_Library.elf&quot;,&quot;ID&quot;:&quot;/DAS JDS TriBoard TC3XX V2.0 TB9P8A3B/Core 1: CPU1 TriCore 1.6P&quot;,&quot;Flags&quot;:0,&quot;UUID&quot;:&quot;1766fb64-b964-46bf-bee9-ede226948481&quot;}]"/>
+    <stringAttribute key="org.eclipse.tcf.debug.PeerID" value="TCP:127.0.0.1:1534"/>
+    <stringAttribute key="org.eclipse.tcf.debug.ProjectName" value="Seekfree_TC264_DualCam_Opensource_Library"/>
+    <booleanAttribute key="org.eclipse.tcf.debug.RunLocalAgent" value="false"/>
+    <booleanAttribute key="org.eclipse.tcf.debug.RunLocalServer" value="false"/>
+    <booleanAttribute key="org.eclipse.tcf.debug.UseLocalAgent" value="false"/>
+    <stringAttribute key="org.eclipse.tcf.debug.executable_name" value="${workspace_loc}/Seekfree_TC264_DualCam_Opensource_Library/Debug/Seekfree_TC264_DualCam_Opensource_Library.elf"/>
+    <stringAttribute key="sessionID" value="74971a47-25a6-42c4-ad4f-9b2d66c1663f"/>
+</launchConfiguration>

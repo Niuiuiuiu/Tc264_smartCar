@@ -34,6 +34,7 @@
 ********************************************************************************************************************/
 #include "zf_common_headfile.h"
 #pragma section all "cpu0_dsram"
+
 // 将本语句与#pragma section all restore语句之间的全局变量都放在CPU0的RAM中
 
 // 本例程是开源库空工程 可用作移植或者测试各类内外设
@@ -41,6 +42,11 @@
 // 本例程是开源库空工程 可用作移植或者测试各类内外设
 
 // **************************** 代码区域 ****************************
+#include "drv_motor.h"
+#include "motor_ctrl.h"
+extern motor_ctrl_t motor_left;
+extern motor_ctrl_t motor_right;
+
 int core0_main(void)
 {
     clock_init();                   // 获取时钟频率<务必保留>
@@ -48,11 +54,20 @@ int core0_main(void)
     // 此处编写用户代码 例如外设初始化代码等
 
 
-
     // 此处编写用户代码 例如外设初始化代码等
     cpu_wait_event_ready();         // 等待所有核心初始化完毕
+    seekfree_assistant_interface_init(SEEKFREE_ASSISTANT_DEBUG_UART); //先用interface中的初始化
+    motor_ctrl_init();
+    pit_ms_init(CCU60_CH0, 25);
+    //drv_motor_set_duty(&motor_left.info, 900U);  // 设置左电机占空比
+    //drv_motor_set_duty(&motor_right.info, 900U); // 设置右电机占空比
     while (TRUE)
     {
+        seekfree_assistant_oscilloscope_data.channel_num = 2;
+        seekfree_assistant_oscilloscope_data.data[0] = (float)motor_left.info.encode;
+        seekfree_assistant_oscilloscope_data.data[1] = (float)motor_right.info.encode;
+        seekfree_assistant_oscilloscope_send(&seekfree_assistant_oscilloscope_data); //再用assistent中的发送函数
+        system_delay_ms(25); // 延时25ms
         // 此处编写需要循环执行的代码
 
 
